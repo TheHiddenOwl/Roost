@@ -14,7 +14,7 @@ param (
     [string]$TargetLevel,
 
     [Parameter(Mandatory = $false, HelpMessage = "If set, the script will only output what would be changed without applying it.")]
-    [switch]$WhatIf
+    [switch]$DryRun
 )
 
 # ----------------------------------------------------------------------------
@@ -26,7 +26,8 @@ function Set-RegistryKey {
         [string]$Name,
         [object]$Value,
         [string]$Type,
-        [string]$Description
+        [string]$Description,
+        [switch]$DryRun
     )
 
     Write-Host "Evaluating: $Description" -ForegroundColor Cyan
@@ -34,8 +35,8 @@ function Set-RegistryKey {
     Write-Host "  Name:  $Name"
     Write-Host "  Value: $Value ($Type)"
 
-    if ($WhatIf) {
-        Write-Host "  [WhatIf] Would set registry key." -ForegroundColor Yellow
+    if ($DryRun) {
+        Write-Host "  [DryRun] Would set registry key." -ForegroundColor Yellow
         Write-Host ""
         return
     }
@@ -107,7 +108,8 @@ foreach ($level in $levelsToApply) {
                         -Name $setting.Name `
                         -Value $setting.Value `
                         -Type $setting.Type `
-                        -Description $setting.Description
+                        -Description $setting.Description `
+                        -DryRun:$DryRun
     }
 }
 

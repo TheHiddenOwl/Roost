@@ -23,7 +23,7 @@ The `Deploy-RegistryHardening.ps1` script requires two mandatory parameters: the
 #### Applying the Windows Baseline (Level 1)
 To preview the changes without applying them (Dry Run):
 ```powershell
-.\Deploy-RegistryHardening.ps1 -JsonConfigPath ".\WindowsBaseline.json" -TargetLevel "Level1" -WhatIf
+.\Deploy-RegistryHardening.ps1 -JsonConfigPath ".\WindowsBaseline.json" -TargetLevel "Level1" -DryRun
 ```
 
 To apply the settings:
@@ -48,6 +48,6 @@ Applying a higher level automatically includes all settings from the lower level
 
 ## Safety Features
 
-- **-WhatIf Support**: Always use `-WhatIf` first to see exactly which registry keys will be modified.
+- **-DryRun Support**: Always use `-DryRun` first to see exactly which registry keys will be modified.
 - **Automated Path Creation**: The script automatically creates missing registry paths if they do not exist.
 - **Error Handling**: Failed settings are logged without interrupting the rest of the deployment.
