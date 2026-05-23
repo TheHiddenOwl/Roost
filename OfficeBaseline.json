@@ -23,13 +23,13 @@
         },
         {
             "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Word\\Security",
-            "Name": "DisableDDEServerLookup",
-            "Value": 1,
+            "Name": "AllowDDE",
+            "Value": 0,
             "Type": "DWord",
-            "Description": "Disable Dynamic Data Exchange (DDE) server lookup in Word to prevent DDE auto-execution exploits."
+            "Description": "Disable Dynamic Data Exchange (DDE) in Word to prevent DDE auto-execution exploits."
         },
         {
-            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Excel\\Security",
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Excel\\Security\\External Content",
             "Name": "DisableDDEServerLookup",
             "Value": 1,
             "Type": "DWord",
@@ -37,10 +37,10 @@
         },
         {
             "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
-            "Name": "DisableAllActiveX",
+            "Name": "DisableFlash",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Disable all ActiveX controls in Office applications without notification."
+            "Description": "Block Shockwave Flash objects from activating in all Office applications (Flash is EOL)."
         }
     ],
     "Level2": [
@@ -74,17 +74,10 @@
         },
         {
             "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
-            "Name": "BlockExtensibility",
+            "Name": "DisableAllActiveX",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Prevent Office applications from loading unapproved add-ins."
-        },
-        {
-            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
-            "Name": "DisableFlash",
-            "Value": 1,
-            "Type": "DWord",
-            "Description": "Block Shockwave Flash objects from activating in all Office applications."
+            "Description": "Disable all ActiveX controls in Office applications without notification."
         }
     ],
     "Level3": [
@@ -136,6 +129,13 @@
             "Value": 1,
             "Type": "DWord",
             "Description": "Prevent legacy MSGraph (OLE Graph components) from executing; forces Office to render static images instead."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
+            "Name": "BlockExtensibility",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Prevent Office applications from loading unapproved add-ins."
         }
     ]
 }
