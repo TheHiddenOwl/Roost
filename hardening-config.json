@@ -5,21 +5,70 @@
             "Name": "EnableMulticast",
             "Value": 0,
             "Type": "DWord",
-            "Description": "Disable LLMNR (Link-Local Multicast Name Resolution) to prevent Responder poisoning."
+            "Description": "Disable LLMNR (Link-Local Multicast Name Resolution) to prevent Responder poisoning and spoofing attacks."
         },
         {
             "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest",
             "Name": "UseLogonCredential",
             "Value": 0,
             "Type": "DWord",
-            "Description": "Disable WDigest authentication to prevent plaintext credentials from being stored in memory."
+            "Description": "Disable WDigest authentication to prevent plaintext credentials from being stored in LSASS memory."
         },
         {
             "Path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
             "Name": "EnableLUA",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Ensure User Account Control (UAC) is enabled."
+            "Description": "Ensure User Account Control (UAC) is enabled to notify when programs try to make changes to the computer."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "ConsentPromptBehaviorAdmin",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Set UAC to 'Always notify and prompt for consent on the secure desktop' for administrators to prevent silent elevation."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+            "Name": "NoDriveTypeAutoRun",
+            "Value": 255,
+            "Type": "DWord",
+            "Description": "Disable Autoplay for all drives to prevent malicious executables from running automatically when media is inserted."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+            "Name": "NoLMHash",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Prevent Windows from storing easily cracked LAN Manager (LM) password hashes in the SAM database."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+            "Name": "DontDisplayLastUserName",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Do not display the last logged-on user's name on the lock screen to hide valid usernames from unauthorized users."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+            "Name": "DisableDomainCreds",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Prevent the storage of passwords and credentials for network authentication in the Credential Manager for increased security."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription",
+            "Name": "EnableTranscripting",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable PowerShell Transcription Logging to record all PowerShell input and output for auditing and forensics."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\DomainProfile",
+            "Name": "EnableFirewall",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Ensure Windows Firewall is enabled for the Domain profile to protect against unauthorized network access."
         }
     ],
     "Level2": [
@@ -28,21 +77,70 @@
             "Name": "RunAsPPL",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Enable LSASS protection (RunAsPPL) to prevent memory dumping by non-protected processes."
+            "Description": "Enable LSASS protection (RunAsPPL) to prevent memory dumping of credentials by non-protected processes."
         },
         {
             "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters",
             "Name": "SMB1",
             "Value": 0,
             "Type": "DWord",
-            "Description": "Disable SMBv1 protocol to prevent exploitation of legacy vulnerabilities (e.g., EternalBlue)."
+            "Description": "Disable SMBv1 protocol to prevent exploitation of legacy vulnerabilities (e.g., EternalBlue, WannaCry)."
         },
         {
             "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Network Connections",
             "Name": "NC_AllowNetBridge_NLA",
             "Value": 0,
             "Type": "DWord",
-            "Description": "Prohibit installation and configuration of Network Bridge on your DNS domain network."
+            "Description": "Prohibit installation and configuration of Network Bridge on your DNS domain network to maintain network segmentation."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+            "Name": "LmCompatibilityLevel",
+            "Value": 5,
+            "Type": "DWord",
+            "Description": "Set LAN Manager authentication level to NTLMv2 responses only. Refuses LM and NTLMv1 for better security."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\RemoteRegistry",
+            "Name": "Start",
+            "Value": 4,
+            "Type": "DWord",
+            "Description": "Disable the Remote Registry service to prevent remote registry modifications by unauthorized users."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\kernel",
+            "Name": "DisableExceptionChainValidation",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Structured Exception Handling Overwrite Protection (SEHOP) to mitigate stack overflow attacks."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters",
+            "Name": "RequireSecuritySignature",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enforce SMB Client Signing. Protects against NTLM relay attacks by signing all SMB traffic."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Printers\\PointAndPrint",
+            "Name": "RestrictDriverInstallationToAdministrators",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Prohibit non-administrators from installing printer drivers to mitigate PrintNightmare vulnerabilities."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WinRM\\Client",
+            "Name": "AllowBasic",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable Basic authentication for the WinRM client to prevent credential interception over unencrypted channels."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+            "Name": "RestrictAnonymousSAM",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Do not allow anonymous enumeration of SAM accounts and shares to prevent reconnaissance."
         }
     ],
     "Level3": [
@@ -51,21 +149,70 @@
             "Name": "UserAuthentication",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Require Network Level Authentication (NLA) for RDP connections."
+            "Description": "Require Network Level Authentication (NLA) for RDP connections to protect against RDP-based attacks."
         },
         {
             "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging",
             "Name": "EnableScriptBlockLogging",
             "Value": 1,
             "Type": "DWord",
-            "Description": "Enable PowerShell Script Block Logging for deep visibility into obfuscated scripts."
+            "Description": "Enable PowerShell Script Block Logging for deep visibility into obfuscated scripts and suspicious commands."
         },
         {
             "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Installer",
             "Name": "AlwaysInstallElevated",
             "Value": 0,
             "Type": "DWord",
-            "Description": "Prevent users from installing MSI packages with elevated privileges (Privilege Escalation mitigation)."
+            "Description": "Prevent users from installing MSI packages with elevated privileges to mitigate local privilege escalation."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+            "Name": "SafeDllSearchMode",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable Safe DLL Search Mode to prevent DLL preloading and hijacking attacks."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters",
+            "Name": "DisableIPSourceRouting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Drop all IP source-routed packets to prevent an attacker from dictating the path of network traffic."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeviceGuard",
+            "Name": "EnableVirtualizationBasedSecurity",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable Virtualization-Based Security (VBS) to use hardware virtualization for isolated memory security."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "RestrictSendingNTLMTraffic",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Deny all outgoing NTLM traffic to remote servers, forcing the use of more secure Kerberos authentication."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters",
+            "Name": "RequireEncryption",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Require SMB Encryption to protect SMB traffic from eavesdropping. Only allows connections to servers supporting SMBv3."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+            "Name": "fDisableCdm",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Disable client drive mapping during Remote Desktop sessions to prevent unauthorized lateral data exfiltration."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\NetBT\\Parameters",
+            "Name": "NodeType",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Configure NetBIOS node type to P-node (Peer-to-Peer) to disable NetBIOS broadcasts and reduce network noise."
         }
     ]
 }

@@ -24,7 +24,7 @@ function Set-RegistryKey {
     param (
         [string]$Path,
         [string]$Name,
-        [string]$Value,
+        [object]$Value,
         [string]$Type,
         [string]$Description
     )
@@ -43,7 +43,7 @@ function Set-RegistryKey {
     try {
         # Create the registry path if it does not exist
         if (-not (Test-Path -Path $Path)) {
-            Write-Verbose "Path does not exist. Creating: $Path"
+            Write-Host "  Path does not exist. Creating: $Path" -ForegroundColor Gray
             New-Item -Path $Path -Force | Out-Null
         }
 
