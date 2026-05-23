@@ -1,0 +1,71 @@
+{
+    "Level1": [
+        {
+            "Path": "HKLM:\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient",
+            "Name": "EnableMulticast",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable LLMNR (Link-Local Multicast Name Resolution) to prevent Responder poisoning."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest",
+            "Name": "UseLogonCredential",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable WDigest authentication to prevent plaintext credentials from being stored in memory."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "EnableLUA",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Ensure User Account Control (UAC) is enabled."
+        }
+    ],
+    "Level2": [
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+            "Name": "RunAsPPL",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable LSASS protection (RunAsPPL) to prevent memory dumping by non-protected processes."
+        },
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters",
+            "Name": "SMB1",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable SMBv1 protocol to prevent exploitation of legacy vulnerabilities (e.g., EternalBlue)."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Network Connections",
+            "Name": "NC_AllowNetBridge_NLA",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Prohibit installation and configuration of Network Bridge on your DNS domain network."
+        }
+    ],
+    "Level3": [
+        {
+            "Path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp",
+            "Name": "UserAuthentication",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Require Network Level Authentication (NLA) for RDP connections."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging",
+            "Name": "EnableScriptBlockLogging",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable PowerShell Script Block Logging for deep visibility into obfuscated scripts."
+        },
+        {
+            "Path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Installer",
+            "Name": "AlwaysInstallElevated",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Prevent users from installing MSI packages with elevated privileges (Privilege Escalation mitigation)."
+        }
+    ]
+}
