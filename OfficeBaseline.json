@@ -41,6 +41,34 @@
             "Value": 1,
             "Type": "DWord",
             "Description": "Block Shockwave Flash objects from activating in all Office applications (Flash is EOL)."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Word\\Security\\ProtectedView",
+            "Name": "DisableInternetFilesInPV",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Ensure Protected View is NOT disabled for internet-sourced Word files."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Excel\\Security\\ProtectedView",
+            "Name": "DisableInternetFilesInPV",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Ensure Protected View is NOT disabled for internet-sourced Excel files."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\PowerPoint\\Security\\ProtectedView",
+            "Name": "DisableInternetFilesInPV",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Ensure Protected View is NOT disabled for internet-sourced PowerPoint files."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
+            "Name": "OpenXMLEncryption",
+            "Value": "Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256",
+            "Type": "String",
+            "Description": "Enforce AES-256 encryption for password-protected Office Open XML files (.docx, .xlsx, .pptx)."
         }
     ],
     "Level2": [
@@ -78,6 +106,27 @@
             "Value": 1,
             "Type": "DWord",
             "Description": "Disable all ActiveX controls in Office applications without notification."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Excel\\Security",
+            "Name": "PackagerPrompt",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Block OLE package activation in Excel specifically to reliably block embedded executable objects."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Word\\Security",
+            "Name": "PackagerPrompt",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Block OLE package activation in Word specifically to reliably block embedded executable objects."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
+            "Name": "TrustBar",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable Trust Bar notifications for security issues to prevent users from enabling blocked content."
         }
     ],
     "Level3": [
@@ -136,6 +185,34 @@
             "Value": 1,
             "Type": "DWord",
             "Description": "Prevent Office applications from loading unapproved add-ins."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Word\\Security",
+            "Name": "DisableDDEServerLaunch",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Disable DDE server launch in Word. Companion to DisableDDEServerLookup for full protection."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Excel\\Security",
+            "Name": "DisableDDEServerLaunch",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Disable DDE server launch in Excel. Companion to DisableDDEServerLookup for full protection."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Security",
+            "Name": "DisableHyperlinkWarning",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Ensure hyperlink security warnings are NOT disabled for unsafe protocols or external destinations."
+        },
+        {
+            "Path": "HKCU:\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\Toolbars",
+            "Name": "NoExtensibilityCustomizationFromDocument",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Prevent Office documents from loading customization (ribbon/toolbar add-ins) defined inside the document itself."
         }
     ]
 }
