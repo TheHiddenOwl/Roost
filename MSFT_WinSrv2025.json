@@ -1,0 +1,214 @@
+{
+    "Level1": [
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon",
+            "Name": "ScRemoveOption",
+            "Value": "1",
+            "Type": "String",
+            "Description": "Interactive logon: Smart card removal behavior"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "ConsentPromptBehaviorAdmin",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "ConsentPromptBehaviorUser",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "User Account Control: Behavior of the elevation prompt for standard users"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "EnableInstallerDetection",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "User Account Control: Detect application installations and prompt for elevation"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "EnableLUA",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "User Account Control: Run all administrators in Admin Approval Mode"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "EnableSecureUIAPaths",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "User Account Control: Only elevate UIAccess applications that are installed in secure locations"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "EnableVirtualization",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "User Account Control: Virtualize file and registry write failures to per-user locations"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "FilterAdministratorToken",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "User Account Control: Admin Approval Mode for the Built-in Administrator account"
+        },
+        {
+            "Path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+            "Name": "InactivityTimeoutSecs",
+            "Value": 900,
+            "Type": "DWord",
+            "Description": "Interactive logon: Machine inactivity limit"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "LimitBlankPasswordUse",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Accounts: Limit local account use of blank passwords to console logon only"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "LmCompatibilityLevel",
+            "Value": 5,
+            "Type": "DWord",
+            "Description": "Network security: LAN Manager authentication level"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "allownullsessionfallback",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Network security: Allow LocalSystem NULL session fallback"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "AuditReceivingNTLMTraffic",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Network security: Restrict NTLM: Audit Incoming NTLM Traffic"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "NTLMMinClientSec",
+            "Value": 537395200,
+            "Type": "DWord",
+            "Description": "Network security: Minimum session security for NTLM SSP based (including secure RPC) clients"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "NTLMMinServerSec",
+            "Value": 537395200,
+            "Type": "DWord",
+            "Description": "Network security: Minimum session security for NTLM SSP based (including secure RPC) servers"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0",
+            "Name": "RestrictSendingNTLMTraffic",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "RestrictAnonymous",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Network access: Do not allow anonymous enumeration of SAM accounts and shares"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "RestrictAnonymousSAM",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Network access: Do not allow anonymous enumeration of SAM accounts"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "RestrictRemoteSAM",
+            "Value": "O:BAG:BAD:(A;;RC;;;BA)",
+            "Type": "String",
+            "Description": "Network access: Restrict clients allowed to make remote calls to SAM"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Lsa",
+            "Name": "SCENoApplyLegacyAuditPolicy",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Control\\Session Manager",
+            "Name": "ProtectionMode",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\LanManServer\\Parameters",
+            "Name": "requiresecuritysignature",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Microsoft network server: Digitally sign communications (always)"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\LanManServer\\Parameters",
+            "Name": "RestrictNullSessAccess",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Network access: Restrict anonymous access to Named Pipes and Shares"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters",
+            "Name": "EnablePlainTextPassword",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Microsoft network client: Send unencrypted password to third-party SMB servers"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters",
+            "Name": "RequireSecuritySignature",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Microsoft network client: Digitally sign communications (always)"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\LDAP",
+            "Name": "LDAPClientIntegrity",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Network security: LDAP client signing requirements"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\Netlogon\\Parameters",
+            "Name": "requiresignorseal",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Domain member: Digitally encrypt or sign secure channel data (always)"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\Netlogon\\Parameters",
+            "Name": "requirestrongkey",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Domain member: Require strong (Windows 2000 or later) session key"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\Netlogon\\Parameters",
+            "Name": "sealsecurechannel",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Domain member: Digitally encrypt secure channel data (when possible)"
+        },
+        {
+            "Path": "HKLM:\\System\\CurrentControlSet\\Services\\Netlogon\\Parameters",
+            "Name": "signsecurechannel",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Domain member: Digitally sign secure channel data (when possible)"
+        }
+    ]
+}
