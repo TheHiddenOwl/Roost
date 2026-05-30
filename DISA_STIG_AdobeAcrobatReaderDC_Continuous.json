@@ -1,0 +1,189 @@
+{
+    "Level1": [],
+    "Level2": [
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bEnhancedSecurityStandalone",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must enable Enhanced Security in a Standalone Application"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bEnhancedSecurityInBrowser",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must enable Enhanced Security in a Browser"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bProtectedMode",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must enable Protected Mode"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "iProtectedView",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must enable Protected View"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cDefaultLaunchURLPerms",
+            "Name": "iURLPerms",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must Block Websites"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cDefaultLaunchURLPerms",
+            "Name": "iUnknownURLPerms",
+            "Value": 3,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must block access to Unknown Websites"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "iFileAttachmentPerms",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must prevent opening files other than PDF or FDF"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bEnableFlash",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must block Flash Content"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cServices",
+            "Name": "bToggleAdobeDocumentServices",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable all service access to Document Cloud Services"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cServices",
+            "Name": "bTogglePrefsSync",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable Cloud Synchronization"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cServices",
+            "Name": "bToggleWebConnectors",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable 3rd Party Web Connectors"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cWebmailProfiles",
+            "Name": "bDisableWebmail",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable access to Webmail"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cSharePoint",
+            "Name": "bDisableSharePointFeatures",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable Online SharePoint Access"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bDisableTrustedFolders",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the ability to add Trusted Files and Folders"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bDisableTrustedSites",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations"
+        },
+        {
+            "Path": "HKCU:\\Software\\Adobe\\Acrobat Reader\\DC\\AVGeneral",
+            "Name": "bFIPSMode",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must enable FIPS mode"
+        }
+    ],
+    "Level3": [
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bDisablePDFHandlerSwitching",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the ability to change the Default Handler"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cCloud",
+            "Name": "bAdobeSendPluginToggle",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook"
+        },
+        {
+            "Path": "HKLM:\\Software\\Wow6432Node\\Adobe\\Acrobat Reader\\DC\\Installer",
+            "Name": "DisableMaintenance",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the Adobe Repair Installation"
+        },
+        {
+            "Path": "HKLM:\\Software\\Adobe\\Acrobat Reader\\DC\\Installer",
+            "Name": "DisableMaintenance",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the Adobe Repair Installation"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cServices",
+            "Name": "bToggleAdobeSign",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable Adobe Send for Signature"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cWelcomeScreen",
+            "Name": "bShowWelcomeScreen",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable the Adobe Welcome Screen"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown\\cServices",
+            "Name": "bUpdater",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable Service Upgrades"
+        },
+        {
+            "Path": "HKCU:\\Software\\Adobe\\Acrobat Reader\\DC\\Security\\cDigSig\\cEUTLDownload",
+            "Name": "bLoadSettingsFromURL",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable periodical uploading of European certificates"
+        },
+        {
+            "Path": "HKCU:\\Software\\Adobe\\Acrobat Reader\\DC\\Security\\cDigSig\\cAdobeDownload",
+            "Name": "bLoadSettingsFromURL",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable periodical uploading of Adobe certificates"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Adobe\\Acrobat Reader\\DC\\FeatureLockDown",
+            "Name": "bAcroSuppressUpsell",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Adobe Reader DC must disable Acrobat Upsell"
+        }
+    ]
+}
