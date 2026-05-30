@@ -1,0 +1,686 @@
+{
+    "Level1": [
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AllowCrossOriginAuthPrompt",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Cross-origin HTTP Authentication prompts"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SavingBrowserHistoryDisabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Disable saving browser history"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DNSInterceptionChecksEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "DNS interception checks enabled"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ComponentUpdatesEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable component updates in Google Chrome"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "GloballyScopeHTTPAuthCacheEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable globally scoped HTTP auth cache"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EnableOnlineRevocationChecks",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable online OCSP/CRL checks"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "CommandLineFlagSecurityWarningsEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable security warnings for command-line flags"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ThirdPartyBlockingEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable third party software injection blocking"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EnterpriseHardwarePlatformAPIEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enables managed extensions to use the Enterprise Hardware Platform API"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ForceEphemeralProfiles",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Ephemeral profile"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SafeBrowsingProtectionLevel",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Safe Browsing Protection Level"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ImportAutofillFormData",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Import autofill form data from default browser on first run"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ImportHomepage",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Import of homepage from default browser on first run"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ImportSearchEngine",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Import search engines from default browser on first run"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SuppressUnsupportedOSWarning",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Suppress the unsupported OS warning"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "MediaRouterCastAllowAllIPs",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow Google Cast to connect to Cast devices on all IP addresses"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BrowserNetworkTimeQueriesEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Allow queries to a Google time service"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AudioSandboxEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Allow the audio sandbox to run"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "PromptForDownloadLocation",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Ask where to save each file before downloading"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BackgroundModeEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Continue running background apps when Google Chrome is closed"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ChromeVariations",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Determine the availability of variations"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "CloudAPAuthEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Allow automatic sign-in to Microsoft cloud identity providers"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Update",
+            "Name": "Update{8A69D345-D564-463C-AFF1-A69D9E530F96}",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Update policy override"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DownloadRestrictions",
+            "Value": 4,
+            "Type": "DWord",
+            "Description": "Allow download restrictions"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Update",
+            "Name": "AutoUpdateCheckPeriodMinutes",
+            "Value": 30,
+            "Type": "DWord",
+            "Description": "Auto-update check period override"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DisableSafeBrowsingProceedAnyway",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Disable proceeding from the Safe Browsing warning page"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SitePerProcess",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Require Site Isolation for every site"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RelaunchNotification",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Notify a user that a browser relaunch or device restart is recommended or required"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RelaunchNotificationPeriod",
+            "Value": 86400000,
+            "Type": "DWord",
+            "Description": "Set the time period for update notifications"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AllowWebAuthnWithBrokenTlsCerts",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow Web Authentication requests on sites with broken TLS certificates"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultInsecureContentSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Control use of insecure content exceptions"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DomainReliabilityAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow reporting of domain reliability related data"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EncryptedClientHelloEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable TLS Encrypted ClientHello"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EnterpriseProfileCreationKeepBrowsingData",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Keep browsing data when creating enterprise profile by default"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "GoogleSearchSidePanelEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Google Search Side Panel"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "HttpsUpgradesEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable automatic HTTPS upgrades"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "InsecureHashesInTLSHandshakesEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Insecure Hashes in TLS Handshakes Enabled"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RendererAppContainerEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable Renderer App Container"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BlockExternalExtensions",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Blocks external extensions from being installed"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "StrictMimetypeCheckForWorkerScriptsEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable strict MIME type checking for worker scripts"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome\\ExtensionInstallBlocklist",
+            "Name": "1",
+            "Value": "*",
+            "Type": "String",
+            "Description": "Configure extension installation blocklist"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ExtensionUnpublishedAvailability",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Control availability of extensions unpublished on the Chrome Web Store"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "PasswordManagerEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Enable saving passwords to the password manager"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "CloudPrintProxyEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Google Cloud Print Proxy"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RemoteAccessHostAllowUiAccessForRemoteAssistance",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow remote users to interact with elevated windows in remote assistance sessions"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome\\RemoteAccessHostClientDomainList",
+            "Name": "1",
+            "Value": ".+",
+            "Type": "String",
+            "Description": "Configure the required domain names for remote access clients"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RemoteAccessHostRequireCurtain",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable curtaining of remote access hosts"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RemoteAccessHostFirewallTraversal",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable firewall traversal from remote access host"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RemoteAccessHostAllowClientPairing",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable or disable PIN-less authentication for remote access hosts"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RemoteAccessHostAllowRelayedConnection",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable the use of relay servers by the remote access host"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "FirstPartySetsEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable First-Party Sets"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "NetworkPredictionOptions",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Enable predict network actions` is set to"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SpellCheckServiceEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable or disable spell checking web service"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultGeolocationSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default geolocation setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "MetricsReportingEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable reporting of usage and crash-related data"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SafeBrowsingForTrustedSourcesEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Safe Browsing for trusted sources"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "UrlKeyedAnonymizedDataCollectionEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable URL-keyed anonymized data collection"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EnableMediaRouter",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Google Cast"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "PaymentMethodQueryEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow websites to query for available payment methods"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BlockThirdPartyCookies",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Block third party cookies"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ChromeCleanupReportingEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Control how Chrome Cleanup reports data to Google"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SyncDisabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Disable synchronization of data with Google"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AlternateErrorPagesEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable alternate error pages"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AllowDeletingBrowserHistory",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable deleting browser and download history"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ImportSavedPasswords",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Import saved passwords from default browser on first run"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome\\SyncTypesListDisabled",
+            "Name": "1",
+            "Value": "passwords",
+            "Type": "String",
+            "Description": "List of types that should be excluded from synchronization"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultClipboardSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default clipboard setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "UserFeedbackAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow user feedback"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AutofillCreditCardEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable AutoFill for credit cards"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DiskCacheSize",
+            "Value": 250609664,
+            "Type": "DWord",
+            "Description": "Set disk cache size, in bytes"
+        }
+    ],
+    "Level2": [
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SafeSitesFilterBehavior",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Control SafeSites adult content filtering"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SSLErrorOverrideAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow proceeding from the SSL warning page"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ForceGoogleSafeSearch",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Force Google SafeSearch"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "RequireOnlineRevocationChecksForLocalAnchors",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Require online OCSP/CRL checks for local trust anchors"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultWebBluetoothGuardSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Control use of the Web Bluetooth API"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultWebUsbGuardSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Control use of the WebUSB API"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "EnforceLocalAnchorConstraintsEnabled",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Determines whether the built-in certificate verifier will enforce constraints encoded into trust anchors loaded from the platform trust store"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultNotificationsSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default notification setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultThirdPartyStoragePartitioningSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default third-party storage partitioning setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ExtensionManifestV2Availability",
+            "Value": 3,
+            "Type": "DWord",
+            "Description": "Control Manifest v2 extension availability"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AuthSchemes",
+            "Value": "ntlm, negotiate",
+            "Type": "String",
+            "Description": "Supported authentication schemes"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome\\NativeMessagingBlocklist",
+            "Name": "1",
+            "Value": "*",
+            "Type": "String",
+            "Description": "Configure native messaging blocklist"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultCookiesSetting",
+            "Value": 4,
+            "Type": "DWord",
+            "Description": "Default cookies setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "SearchSuggestEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable search suggestions"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "TranslateEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable Translate"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BrowserSignin",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Browser sign in settings"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "ScreenCaptureAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow or deny screen capture"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultSerialGuardSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Control use of the Serial API"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultSensorsSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default Sensors Setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DefaultWindowManagementSetting",
+            "Value": 2,
+            "Type": "DWord",
+            "Description": "Default Window Management permissions setting"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AllowFileSelectionDialogs",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow invocation of file selection dialogs"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AudioCaptureAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow or deny audio capture"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "VideoCaptureAllowed",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Allow or deny video capture"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "DnsOverHttpsMode",
+            "Value": "secure",
+            "Type": "String",
+            "Description": "Controls the mode of DNS-over-HTTPS"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "AutofillAddressEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable AutoFill for addresses"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "BrowserGuestModeEnabled",
+            "Value": 0,
+            "Type": "DWord",
+            "Description": "Enable guest mode in browser"
+        },
+        {
+            "Path": "HKLM:\\Software\\Policies\\Google\\Chrome",
+            "Name": "IncognitoModeAvailability",
+            "Value": 1,
+            "Type": "DWord",
+            "Description": "Incognito mode availability"
+        }
+    ],
+    "Level3": []
+}
