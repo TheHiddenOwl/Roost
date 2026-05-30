@@ -7,6 +7,7 @@ This repository provides an enterprise-grade framework for automating the deploy
 - `Deploy-RegistryHardening.ps1`: The core PowerShell script used to apply settings from JSON configuration files.
 - `WindowsBaseline.json`: A comprehensive collection of Windows OS hardening settings, including UAC, SMBv1 disablement, Credential Guard, and ASR rules.
 - `OfficeBaseline.json`: Targeted security settings for Microsoft Office (Word, Excel, PowerPoint), focusing on macro protection, DDE mitigation, and OLE blocking.
+- `CIS_GoogleChrome.json`: Security configuration for Google Chrome based on CIS benchmarks, covering privacy, extension controls, and browser security.
 
 ## Hardening Levels
 
@@ -34,6 +35,11 @@ To apply the settings:
 #### Applying the Office Baseline (Level 2)
 ```powershell
 .\Deploy-RegistryHardening.ps1 -JsonConfigPath ".\OfficeBaseline.json" -TargetLevel "Level2"
+```
+
+#### Applying the Google Chrome Baseline (Level 1)
+```powershell
+.\Deploy-RegistryHardening.ps1 -JsonConfigPath ".\CIS_GoogleChrome.json" -TargetLevel "Level1"
 ```
 
 ### Cumulative Nature
